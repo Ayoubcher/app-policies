@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AuthCode: Privacy Policy</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1.25rem;
+    line-height: 1.6;
+    color: #1a1a1a;
+  }
+  h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.3rem; margin-top: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 0.25rem; }
+  .meta { color: #555; font-size: 0.9rem; margin-bottom: 1.5rem; }
+  .summary {
+    background: #eef4ff;
+    border: 1px solid #cfe0ff;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0;
+  }
+  a { color: #2461D9; }
+  ul { padding-left: 1.25rem; }
+</style>
+</head>
+<body>
+
+<h1>AuthCode: Privacy Policy</h1>
+<p class="meta">Effective date: 2026-07-02<br>
+Developer: Ayoub &middot; Contact: <a href="mailto:ayoubcherqa2020@gmail.com">ayoubcherqa2020@gmail.com</a></p>
+
+<div class="summary">
+  <strong>AuthCode collects NO data.</strong> Everything stays on your device.
+  The app has no internet access: it does not request the <code>INTERNET</code>
+  permission, cannot make network requests, and does not communicate with any
+  server (including ours).
+</div>
+
+<h2>Data Collection</h2>
+<p>AuthCode collects nothing. There is no analytics, no crash reporting, no
+ads, no accounts, no sign-in, and no third-party SDKs of any kind that
+transmit data. Nothing about you or your device is ever sent anywhere,
+because the app has no way to send anything anywhere.</p>
+
+<h2>Data Storage</h2>
+<p>AuthCode is a two-factor authentication (TOTP) code generator. The only
+data it holds is what you type in yourself:</p>
+<ul>
+  <li><strong>Your 2FA accounts:</strong> the issuer name, an optional
+  label, and the secret key you enter (either typed or pasted) for each
+  account you add, plus the code settings (digit count, refresh period) for
+  that account.</li>
+</ul>
+<p>This data is stored <strong>only on your device</strong>, in the app's
+private, sandboxed storage area that other apps cannot access. It is used
+exclusively to compute your 6-digit codes locally on your device, using the
+standard TOTP algorithm (RFC 6238). It is never uploaded, synced, or
+transmitted anywhere, because AuthCode has no server and no network access to
+do so even if it wanted to.</p>
+<p>AuthCode is also excluded from Android device backups
+(<code>allowBackup="false"</code>), so your 2FA secrets are never copied into
+a phone backup, cloud or local. This is deliberate: it keeps your secrets
+from ever leaving the device, even incidentally.</p>
+<p><strong>Important trade-off:</strong> because AuthCode does not sync or
+back up your data by design, losing, resetting, or replacing your device
+means losing your saved 2FA codes, since there is no cloud copy to restore from.
+We recommend you also keep the backup/recovery codes your account issuers
+(Google, GitHub, etc.) give you when you first set up 2FA, and store those
+somewhere safe, in case you ever lose access to this device.</p>
+<p>All app data is permanently deleted when you delete an account inside the
+app, or when you uninstall AuthCode.</p>
+
+<h2>Permissions</h2>
+<p>AuthCode does not declare any Android permissions. It does not request
+camera, storage, network, contacts, location, or any other permission: it
+does not need them, since accounts are entered manually and everything runs
+locally.</p>
+
+<h2>On-Device Processing</h2>
+<p>All TOTP code generation happens entirely on your device using local
+computation (HMAC-SHA1 per RFC 6238). No data ever leaves your device for
+processing.</p>
+
+<h2>Children's Privacy</h2>
+<p>AuthCode is not directed at children under 13 and does not knowingly
+collect information from anyone, of any age; it does not collect
+information at all.</p>
+
+<h2>Changes to This Policy</h2>
+<p>If this policy changes, the update will be posted at the same URL this
+policy is hosted at.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy or the app:
+<a href="mailto:ayoubcherqa2020@gmail.com">ayoubcherqa2020@gmail.com</a></p>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ScanLite — Privacy Policy</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 20px 80px;
+    line-height: 1.6;
+    color: #0C0E10;
+    background: #F2F4F5;
+  }
+  h1 { font-size: 1.6em; margin-bottom: 0.2em; }
+  h2 { font-size: 1.2em; margin-top: 2em; border-bottom: 1px solid #ccc; padding-bottom: 0.3em; }
+  .meta { color: #555; margin-bottom: 1.5em; }
+  .summary {
+    background: #0C0E10;
+    color: #F2F4F5;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin: 1.5em 0;
+  }
+  .summary strong { color: #00E5A0; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th, td { text-align: left; padding: 8px 12px; border: 1px solid #ccc; }
+  th { background: #e9ecee; }
+  code { background: #e9ecee; padding: 1px 5px; border-radius: 4px; }
+  a { color: #067a5b; }
+</style>
+</head>
+<body>
+  <h1>ScanLite — Privacy Policy</h1>
+  <p class="meta"><strong>Effective date:</strong> 2026-07-02<br>
+  <strong>Developer:</strong> Ayoub<br>
+  <strong>Contact:</strong> ayoubcherqa2020@gmail.com</p>
+
+  <div class="summary">
+    <strong>ScanLite itself collects no data — your scan history stays only
+    on your device.</strong> ScanLite is ad-supported and shows ads served by
+    <strong>Google AdMob</strong>. To do that, the app requests the
+    <code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code> permissions,
+    used solely for loading and displaying ads. AdMob, as a third-party
+    service, may collect device identifiers, IP address, and coarse
+    ad-interaction data as described below. Watching one rewarded ad unlocks
+    <strong>Pro</strong> for 24 hours: no ads, plus extra QR style options.
+  </div>
+
+  <h2>Data Collection</h2>
+  <p><strong>ScanLite (the app code we wrote) collects no data.</strong> Specifically:</p>
+  <ul>
+    <li>No analytics or crash-reporting SDKs</li>
+    <li>No accounts, sign-in, or user identifiers</li>
+    <li>No first-party servers — the app has no backend</li>
+    <li>Your scan history is never uploaded, synced, or shared with the developer</li>
+  </ul>
+  <p><strong>Google AdMob</strong>, the ad network embedded in the app to show
+  ads, is a third-party service and collects data independently of the app in
+  order to serve and measure ads. This can include device identifiers (such
+  as the advertising ID), IP address, coarse location derived from IP, app
+  version, and ad-interaction data (impressions, clicks). This data goes to
+  Google, not to the developer of ScanLite. See Google's own disclosures for
+  details:</p>
+  <ul>
+    <li><a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a></li>
+    <li><a href="https://support.google.com/admob/answer/6128543">support.google.com/admob/answer/6128543</a></li>
+  </ul>
+
+  <h2>Data Storage (all on-device only)</h2>
+  <p>ScanLite stores the following, in a local database on your device only:</p>
+  <ul>
+    <li><strong>Your scan history</strong> — the raw text/value of each code
+      you scan or generate (for example a URL, a Wi-Fi network's name and
+      password, a contact card, an email, a phone number, an SMS, a location,
+      a product barcode, or plain text), its code format, its type, and the
+      time it was scanned or generated.</li>
+  </ul>
+  <p>This history can contain sensitive content, most notably <strong>Wi-Fi
+  passwords</strong> captured from Wi-Fi QR codes. It is stored only in the
+  app's private on-device database, with <code>allowBackup</code> disabled,
+  and is never uploaded or transmitted by ScanLite itself.</p>
+  <p>You control this history directly in the app:</p>
+  <ul>
+    <li>Swipe a single entry away, or use its delete icon, to remove it.</li>
+    <li>Use <strong>Clear all</strong> to erase the entire history at once.</li>
+    <li>Uninstalling the app deletes all of it permanently.</li>
+  </ul>
+  <p>ScanLite also temporarily writes a PNG image of a QR code you choose to
+  share to a private app cache folder, solely so the Android share sheet can
+  attach it to the app you pick (e.g. Messages, email). This file lives in the
+  app's own sandboxed cache, is overwritten on each share, and is deleted when
+  you clear the app's cache or uninstall the app. It is not uploaded by
+  ScanLite itself: it only leaves the device if and when you personally
+  choose a destination app in the share sheet.</p>
+
+  <h2>Ads and Pro</h2>
+  <p>ScanLite shows ads to keep the app free:</p>
+  <ul>
+    <li><strong>Banner and interstitial ads</strong>, served by Google AdMob,
+      appear during normal use. Interstitials are capped — shown at most once
+      every third qualifying scan, with a minimum time gap between them — so
+      they never interrupt every scan.</li>
+    <li><strong>Rewarded ads</strong>: watching one, in full, grants
+      <strong>Pro</strong> for 24 hours, which removes all ads and unlocks
+      additional QR code style options (color presets, larger export size).
+      Pro is currently free (watch an ad to unlock it) — there is no account
+      and no payment involved.</li>
+    <li>Ad serving currently uses Google's <strong>test ad units</strong>
+      during development; production ad unit IDs will be swapped in before
+      the app is generally available.</li>
+  </ul>
+
+  <h2>Permissions</h2>
+  <table>
+    <tr><th>Permission</th><th>Why</th></tr>
+    <tr><td><code>CAMERA</code></td><td>To scan QR codes and barcodes live through the camera viewfinder.</td></tr>
+    <tr><td><code>INTERNET</code></td><td>Required by Google AdMob to request and display ads. Not used by ScanLite's own code for any network activity.</td></tr>
+    <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Required by Google AdMob to check connectivity before requesting ads.</td></tr>
+  </table>
+  <p>Those are the <strong>only</strong> permissions ScanLite requests. There
+  is no location, contacts, storage, or microphone permission.</p>
+
+  <h2>On-Device Processing</h2>
+  <p>All barcode/QR detection and decoding uses Google's ML Kit
+  <strong>bundled</strong> (offline) barcode-scanning model. Every frame from
+  the camera, and every image you pick to scan, is analyzed entirely on your
+  device. No image, frame, or decoded value is ever uploaded to ML Kit,
+  Google, or any other server by ScanLite.</p>
+
+  <h2>Children's Privacy</h2>
+  <p>ScanLite is not directed at children under 13. The app itself does not
+  knowingly collect information from anyone, regardless of age. Because the
+  app shows ads via Google AdMob, standard AdMob data collection (see "Data
+  Collection" above) applies to all users; ScanLite does not configure
+  child-directed ad treatment.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>If this policy changes, the updated version will be posted at the same
+  URL this document is hosted at, with a revised effective date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy or the app:
+  <a href="mailto:ayoubcherqa2020@gmail.com">ayoubcherqa2020@gmail.com</a></p>
+</body>
+</html>

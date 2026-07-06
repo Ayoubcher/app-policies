@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VolumeBoost: Privacy Policy</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 760px;
+    margin: 2rem auto;
+    padding: 0 1.25rem;
+    line-height: 1.55;
+    color: #1a1a1a;
+  }
+  h1 { font-size: 1.85rem; margin-bottom: 0.25rem; }
+  .meta { color: #555; margin-bottom: 1.5rem; font-size: 0.875rem; }
+  .summary {
+    background: #FFF3E9;
+    border: 1px solid #FF7A1A;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  h2 { font-size: 1.3rem; margin-top: 2rem; border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { text-align: left; padding: 0.5rem 0.75rem; border: 1px solid #ddd; vertical-align: top; }
+  th { background: #fafafa; }
+  code { background: #f2f2f2; padding: 0.1rem 0.35rem; border-radius: 4px; font-size: 0.92em; }
+  footer { margin-top: 2.5rem; color: #666; font-size: 0.9rem; }
+</style>
+</head>
+<body>
+
+<h1>VolumeBoost: Privacy Policy</h1>
+<p class="meta">
+  Effective date: 2026-07-02<br>
+  Developer: Ayoub &nbsp;·&nbsp; Contact: <a href="mailto:ayoubcherqa2020@gmail.com">ayoubcherqa2020@gmail.com</a>
+</p>
+
+<div class="summary">
+  VolumeBoost collects NO data. Everything stays on your device. The app has no internet access.
+</div>
+
+<h2>Data Collection</h2>
+<p>VolumeBoost collects nothing. There is:</p>
+<ul>
+  <li>No analytics or crash reporting</li>
+  <li>No advertising or ad SDKs</li>
+  <li>No user accounts, sign-in, or sign-up</li>
+  <li>No third-party SDKs that transmit data anywhere</li>
+  <li>No network access at all: the app has no <code>INTERNET</code> permission and cannot send or receive data over a network, by anyone, ever.</li>
+</ul>
+
+<h2>Data Storage</h2>
+<p>
+  VolumeBoost does not save, log, or store anything of its own: no files, no preferences, no database.
+  The app has no local storage layer (no DataStore, no SharedPreferences, no Room database).
+</p>
+<p>
+  The only "state" VolumeBoost touches is your device's own system volume levels (Media, Ring, Notification,
+  Alarm, Call, System), which it reads and adjusts through Android's built-in <code>AudioManager</code>.
+  This is the exact same system settings your physical volume buttons control, not data created or stored by
+  VolumeBoost, and it is never transmitted anywhere. Closing or uninstalling the app removes every trace of it;
+  there is nothing app-specific left behind.
+</p>
+
+<h2>Permissions</h2>
+<p>VolumeBoost's installed app requests the following permissions (verified against the built APK):</p>
+<table>
+  <tr><th>Permission</th><th>Why it's needed</th></tr>
+  <tr>
+    <td><code>MODIFY_AUDIO_SETTINGS</code></td>
+    <td>Lets the app read and change your device's stream volumes and attach the loudness-boost audio effect.
+        This is a normal (install-time) permission; Android does not show a runtime prompt for it.</td>
+  </tr>
+  <tr>
+    <td><code>com.ayoub.volumeboost.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code></td>
+    <td>Not requested by VolumeBoost: this is a permission Android itself auto-generates for every app that
+        registers an internal, non-exported broadcast receiver (used here so VolumeBoost's UI can detect when
+        you press the hardware volume buttons). It cannot be used by any other app and carries no user data.</td>
+  </tr>
+</table>
+<p>
+  VolumeBoost does <strong>not</strong> request <code>RECORD_AUDIO</code> (microphone) or any other
+  dangerous/runtime permission. The app never records or listens to audio: its "Real Boost" feature uses
+  Android's <code>LoudnessEnhancer</code>, an <strong>output</strong> audio effect that boosts the loudness of
+  sound already being played by your device (e.g., music, media) before it reaches your speakers/headphones.
+  It does not read, sample, or have access to your microphone or any input audio in any way.
+</p>
+
+<h2>On-Device Processing</h2>
+<p>
+  The loudness boost (<code>LoudnessEnhancer</code>) runs entirely on-device, inside Android's audio pipeline,
+  on audio your device is already playing. Nothing is uploaded, streamed out, or processed on any server:
+  there is no server, because the app has no internet access.
+</p>
+
+<h2>Children's Privacy</h2>
+<p>
+  VolumeBoost is not directed at children under 13 and does not knowingly collect information from anyone, of
+  any age, because it does not collect information at all.
+</p>
+
+<h2>Changes</h2>
+<p>If this policy ever changes, the update will be posted at the same URL where you found this document.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy? Email <a href="mailto:ayoubcherqa2020@gmail.com">ayoubcherqa2020@gmail.com</a>.</p>
+
+<footer>VolumeBoost · Effective 2026-07-02</footer>
+
+</body>
+</html>
