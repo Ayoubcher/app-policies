@@ -17,7 +17,7 @@
 </blockquote>
 
 <h2>Data Collection</h2>
-<p>DocLite collects nothing. There are no analytics, no ads, no accounts, no crash-reporting services, and no third-party SDKs that transmit data.</p>
+<p>DocLite collects nothing. There are no analytics, no ads, no accounts, and no crash-reporting services. The only third-party component is Google Play Billing, used solely for the optional Pro purchase (see Purchases below) — it talks to the Google Play app on your device, not to any server of ours (we run none).</p>
 
 <h2>Data Storage</h2>
 <p>The documents you scan — page images and the PDFs you export — are stored only on your device, in the app's private storage. Document titles and page order are kept in a local database on your device. Nothing is uploaded anywhere, ever.</p>
@@ -30,10 +30,13 @@
 <ul>
 <li><strong>Camera</strong> — used solely to photograph documents you choose to scan. Images are processed entirely on your device. DocLite does not record video or audio.</li>
 </ul>
-<p>DocLite holds <strong>no other permissions</strong>: no internet, no network state, no storage, no location, no contacts.</p>
+<p>DocLite holds <strong>no other permissions</strong>: no internet, no network state, no storage, no location, no contacts. (The Google Play billing permission is present solely to enable the optional Pro purchase through the Play Store app.)</p>
 
 <h2>On-Device Processing</h2>
 <p>Cropping, perspective correction, filters, and PDF creation all run locally using Android's built-in graphics — no cloud services, no machine-learning uploads.</p>
+
+<h2>Purchases</h2>
+<p>DocLite offers an optional one-time "Pro" purchase that removes the free page limit. The purchase is processed entirely by <strong>Google Play</strong>; DocLite never sees, transmits, or stores your payment details. The app receives only an unlock confirmation from Google Play and stores that yes/no state on your device. Google's handling of payment data is described in <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
 
 <h2>Children's Privacy</h2>
 <p>DocLite is not directed at children under 13 and collects no data from anyone, of any age.</p>
